@@ -60,17 +60,16 @@ char **strtow(char *str, char *d)
 char **strtow2(char *str, char d)
 
 {
-	int g, n, o, r;
-	char **words;
+	int g, n, o, r, numwords = 0;
+	char **s;
 
 	if (str == NULL || str[0] == 0)
 		return (NULL);
 	for (g = 0; str[g] != '\0'; g++)
 		if ((str[g] != d && str[g + 1] == d) ||
 				(str[g] != d && !str[g + 1]) || str[g + 1] == d)
-			numwords;
-	word = malloc((numwords + 1) * sizeof(char *));
-	if (!words)
+			numwords++;
+	if (numwords == 0)
 		return (NULL);
 	s = malloc((1 + numwords) * sizeof(char *));
 	if (!s)
