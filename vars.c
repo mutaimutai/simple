@@ -147,14 +147,14 @@ int replace_vars(info_t *info)
 }
 
 /**
- * replace_string -string replaced
+ * replace_strings -string replaced
  * @old: old string address
  * @new: new string
  *
  * Return: 1 if replaced, otherwise 0
  */
 
-int replace_string(char **old, char *new)
+int replace_strings(char **old, char *new)
 
 {
 	free(*old);
