@@ -40,8 +40,12 @@ char *dup_chars(char *pathstr, int start, int stop)
 	int c = 0, e = 0;
 
 	for (e = 0, c = start; c < stop; c++)
+	{
 		if (pathstr[c] != ':')
-			buf[e++] = pathstr[e];
+		{
+			buf[e++] = pathstr[c];
+		}
+	}
 	buf[e] = 0;
 	return (buf);
 }
