@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * _myhistory - history list is displayed
- * @info: Structure containing having arguments
+ * _myhistory-previously used commands
+ * @info:arguments fro a structure
  *
  *  Return: Always 0
  */
@@ -15,9 +15,9 @@ int _myhistory(info_t *info)
 }
 
 /**
- * unset_alias - string gotten from alias
- * @info: struct parameter
- * @str: alias string
+ * unset_alias-what is from alias
+ * @info:parameter frm struct
+ * @str:string alias
  *
  * Return: On success 0 always, error 1
  */
@@ -40,8 +40,8 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - string alias
- * @info: struct for parameter
+ * set_alias-alias string
+ * @info:parameter from struct
  * @str: alias string
  *
  * Return: 0 on success always, 1 on error
@@ -63,8 +63,8 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - prints an alias string
- * @node: the alias node
+ * print_alias-a function that prints an alias
+ * @node:alias node
  *
  * Return: Always 0 on success, 1 on error
  */
@@ -86,8 +86,8 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - builtin alias mimmiced (man alias)
- * @info: Structure having potential arguments
+ * _myalias - builtin alias (man alias)
+ * @info:potential arguments from structure
  *
  *  Return: Always 0
  */
