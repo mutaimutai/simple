@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * main - point entry
- * @ac: count arg
- * @av: vector arg
+ * main-entry point of the shell
+ * @ac:argument count
+ * @av: vector argument
  *
  * Return: 0 on success, 1 on error
  */
