@@ -33,7 +33,7 @@ int path_value(char **arg, char **env)
 		path_l = strcpy(path_l, token);
 		strcat(path_l, "/");
 		strcat(path_l, *arg);
-		if(stat(path_l, &stat_line_ptr) == 0)
+		if(stat(path_l, &stat_lineptr) == 0)
 		{
 			*arg = path_l;
 			free(path_content);
