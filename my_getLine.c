@@ -116,7 +116,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 }
 
 /**
- * _getline - line input for STDIN
+ * my_getline - line input for STDIN
  * @info: struct parameter
  * @ptr: address of pointer to buffer, preallocated or NULL
  * @length: size of preallocated ptr buffer if not NULL
