@@ -15,7 +15,7 @@ char *_strcpy(char *dest, char *src)
 
 	if (dest == src || src == 0)
 		return (dest);
-	while (src[i])
+	while (src[b])
 	{
 		dest[b] = src[b];
 		b++;

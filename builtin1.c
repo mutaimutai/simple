@@ -88,7 +88,7 @@ int print_alias(list_t *node)
 /**
  * _myalias - builtin alias mimmiced (man alias)
  * @info: Structure having potential arguments
- * 
+ *
  *  Return: Always 0
  */
 
@@ -111,7 +111,7 @@ int _myalias(info_t *info)
 	}
 	for (f = 1; info->argv[f]; f++)
 	{
-		p = _strchr(info->argv[i], '=');
+		p = _strchr(info->argv[f], '=');
 		if (p)
 			set_alias(info, info->argv[f]);
 		else

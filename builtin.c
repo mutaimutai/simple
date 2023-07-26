@@ -34,7 +34,7 @@ int _myexit(info_t *info)
 /**
  * _mycd - current directory changed
  * @info: Structure having potential arguments
- * 
+ *
  * Return: Always 0
  */
 
@@ -86,7 +86,7 @@ int _mycd(info_t *info)
 /**
  * _myhelp - current directory changed
  * @info: Structure having potential arguments
- * 
+ *
  * Return: Always 0
  */
 

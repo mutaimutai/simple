@@ -45,7 +45,7 @@ char **list_to_strings(list_t *head)
 		str = malloc(_strlen(node->str) + 1);
 		if (!str)
 		{
-			for (s = 0; j < t; s++)
+			for (s = 0; s < t; s++)
 				free(strs[s]);
 			free(strs);
 			return (NULL);
@@ -80,7 +80,7 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		t++;
 	}
-	return (i);
+	return (t);
 }
 
 /**

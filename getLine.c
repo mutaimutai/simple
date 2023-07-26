@@ -58,7 +58,7 @@ ssize_t get_input(info_t *info)
 {
 	static char *buf; /* the ';' command chain buffer */
 	static size_t u, v, len;
-	ssize_t r = 0;
+	ssize_t x = 0;
 	char **buf_p = &(info->arg), *p;
 
 	_putchar(BUF_FLUSH);
@@ -102,16 +102,16 @@ ssize_t get_input(info_t *info)
  * Return: x
  */
 
-ssize_t read_buf(info_t *info, char *buf, size_t *u)
+ssize_t read_buf(info_t *info, char *buf, size_t *i)
 
 {
 	ssize_t x = 0;
 
-	if (*u)
+	if (*i)
 		return (0);
 	x = read(info->readfd, buf, READ_BUF_SIZE);
 	if (x >= 0)
-		*u = x;
+		*i = x;
 	return (x);
 }
 

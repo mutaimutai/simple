@@ -3,7 +3,7 @@
 /**
  * get_environ - environ string array returned
  * @info: Structure having potential arguments
- * 
+ *
  * Return: Always 0
  */
 
@@ -21,7 +21,7 @@ char **get_environ(info_t *info)
 
 /**
  * _unsetenv - environment variable is removed
- * @info: Structure having potential arguments 
+ * @info: Structure having potential arguments
  * @var: the string env var property
  *
  * Return: delete on 1, 0 otherwise
@@ -55,9 +55,8 @@ int _unsetenv(info_t *info, char *var)
 
 /**
  * _setenv - new environment variable initialized
- * 
+ *
  * @info: Structure having potential arguments
- * 
  * @var: the string env var property
  * @value: the string env var value
  *  Return: Always 0
