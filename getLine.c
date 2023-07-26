@@ -30,7 +30,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 		{
 			if ((*buf)[x - 1] == '\n')
 			{
-				(*buf)[x - 1] = '\0'; /* remove trailing newline */
+				(*buf)[x - 1] = '\0';
 				x--;
 			}
 			info->linecount_flag = 1;
