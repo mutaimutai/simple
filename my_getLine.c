@@ -124,7 +124,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
  * Return: s
  */
 
-int _getline(info_t *info, char **ptr, size_t *length)
+int my_getline(info_t *info, char **ptr, size_t *length)
 
 {
 	static char buf[READ_BUF_SIZE];
