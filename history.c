@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_history_file - history file gotten
+ * get_history_file-gets the history file
  * @info: struct parameter
  *
  * Return: a file history is allocated
@@ -131,7 +131,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history linked list after changes
+ * renumber_history-renumbers history after calling
  * @info: Structure having potential arguments
  *
  * Return: histcount new
