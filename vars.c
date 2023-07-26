@@ -149,7 +149,7 @@ int replace_vars(info_t *info)
 }
 
 /**
- * replace_string - replaces string
+ * replace_string - replaces ia string
  * @old: old string address
  * @new: new string
  *
