@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _erratoi - integer gotten from string
+ * _erratoi-integers from srings
  * @s: converted string
  * Return: string is 0 if no number present, converted number otherwise
  * error -1
