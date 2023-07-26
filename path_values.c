@@ -1,17 +1,20 @@
 #include "shell.h"
+
 /**
  * path_value - gets each path from the mainPATH
  * @arg:input from user
  * @env:environment variable
  * Return:pointer to the path as string
  */
+
 int path_value(char **arg, char **env)
+
 {
-	chatr *token = NULL, *path_content = NULL, *path_l =  NULL;
+	char *token = NULL, *path_content = NULL, *path_l =  NULL;
 	size_t path_len, arg_len;
 	struct stat stat_line_ptr;
 
-	if (stat(*arg, &stat_lineptr) == 0)
+	if (stat (*arg, &stat_line_ptr) == 0)
 		return (-1);
 	path_content = path(env);
 	if(!path_content)
@@ -30,7 +33,7 @@ int path_value(char **arg, char **env)
 		path_l = strcpy(path_l, token);
 		strcat(path_l, "/");
 		strcat(path_l, *arg);
-		if(stat(path_l, &stat_lineptr) == 0)
+		if(stat(path_l, &stat_line_ptr) == 0)
 		{
 			*arg = path_l;
 			free(path_content);
