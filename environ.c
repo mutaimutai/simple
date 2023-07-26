@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * _myenv - environment currently printed
- * @info: Structure having potential arguments
+ * _myenv-prints environment variables
+ * @info:arguments from struct
  *
  * Return: Always 0
  */
@@ -15,9 +15,9 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - environment variable value gotten
- * @info: Structure having potential arguments
- * @name: env var name
+ * _getenv-getting environment variables values
+ * @info:arguments
+ * @name: environment var name
  *
  * Return: the value
  */
@@ -39,7 +39,7 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - new environment variable
+ * _mysetenv-setting a new environment variable
  * @info: Structure having potential arguments
  *
  *  Return: Always 0
@@ -82,8 +82,8 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - env linked list populates
- * @info: Structure having potential arguments
+ * populate_env_list - env linked list
+ * @info:arguments
  *
  * Return: Always 0
  */
